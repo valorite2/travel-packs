@@ -1,12 +1,12 @@
 /* Variables CSS para colores */
 :root {
-    --primary-color: #007bff; /* Azul vibrante, similar a Despegar */
-    --secondary-color: #0056b3; /* Azul más oscuro para hover */
-    --text-color: #333;
-    --light-bg: #f8f9fa;
-    --dark-bg: #343a40;
-    --white: #ffffff;
-    --border-color: #dee2e6;
+    --primary-color: #fff; /* Azul vibrante, similar a Despegar */
+    --secondary-color: #fff; /* Azul más oscuro para hover */
+    --text-color: #fff;
+    --light-bg: #fff;
+    --dark-bg: #fff;
+    --white: #1C418C;
+    --border-color: #fff;
 }
 
 /* Reset básico */
@@ -107,7 +107,7 @@ ul {
 /* --- Hero Section --- */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500/007bff/ffffff?text=Tu+Destino+Te+Espera') no-repeat center center/cover;
-    color: var(--white);
+    color: var(--primary-color);
     text-align: center;
     padding: 100px 0;
     margin-bottom: 40px;
