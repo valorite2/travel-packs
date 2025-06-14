@@ -1,0 +1,316 @@
+/* Variables CSS para colores */
+:root {
+    --primary-color: #007bff; /* Azul vibrante, similar a Despegar */
+    --secondary-color: #0056b3; /* Azul más oscuro para hover */
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+    --white: #ffffff;
+    --border-color: #dee2e6;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+/* --- Navegación principal --- */
+.main-nav .nav-list {
+    display: flex;
+    gap: 25px; /* Espacio entre los elementos del menú */
+    align-items: center;
+}
+
+.main-nav .nav-list a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.main-nav .nav-list a:hover {
+    color: var(--primary-color);
+}
+
+.main-nav .nav-toggle {
+    display: none; /* Oculto por defecto en desktop */
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.user-menu {
+    margin-left: 20px;
+}
+
+.user-menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color) !important; /* Para asegurar que el color sea primario */
+}
+
+.user-menu a i {
+    font-size: 1.5rem;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500/007bff/ffffff?text=Tu+Destino+Te+Espera') no-repeat center center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* --- Info Section (Features Grid) --- */
+.info-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-footer p {
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Media Queries para Responsividad --- */
+
+@media (max-width: 992px) {
+    .main-nav .nav-list {
+        gap: 15px;
+    }
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%; /* El logo ocupa todo el ancho */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .main-nav {
+        width: 100%;
+        position: relative; /* Para posicionar el botón de toggle */
+        display: flex;
+        justify-content: flex-end; /* Alinea el botón de toggle a la derecha */
+        margin-top: -50px; /* Ajuste para el logo que ahora es 100% */
+        padding-right: 15px; /* Espacio para el botón de toggle */
+    }
+
+    .main-nav .nav-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+    }
+
+    .main-nav .nav-list {
+        display: none; /* Oculta el menú por defecto en móvil */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 60px; /* Debajo del header/logo */
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .main-nav .nav-list.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .main-nav .nav-list li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .main-nav .nav-list li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav .nav-list a {
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+    }
+
+    .user-menu {
+        margin-left: 0;
+        margin-top: 10px; /* Espacio para el elemento de usuario */
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .info-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+    .feature-item h3 {
+        font-size: 1.4rem;
+    }
+    .main-footer .social-links a {
+        font-size: 1.2rem;
+    }
+}
