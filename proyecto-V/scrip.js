@@ -37,3 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+//cuadro del buscador
+function buscar() {
+  const origen = document.getElementById("origen").value;
+  const destino = document.getElementById("destino").value;
+  const entrada = document.getElementById("fecha-entrada").value;
+  const salida = document.getElementById("fecha-salida").value;
+
+  alert(`Buscando paquetes de ${origen} a ${destino} del ${entrada} al ${salida}`);
+}

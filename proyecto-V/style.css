@@ -1,7 +1,9 @@
 /* Variables CSS para colores */
 :root {
-    --primary-color: #fff; /* Azul vibrante, similar a Despegar */
-    --secondary-color: #fff; /* Azul más oscuro para hover */
+    --primary-color: #fff;
+    /* Azul vibrante, similar a Despegar */
+    --secondary-color: #fff;
+    /* Azul más oscuro para hover */
     --text-color: #fff;
     --light-bg: #fff;
     --dark-bg: #fff;
@@ -27,6 +29,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
 }
 
 a {
@@ -61,11 +64,21 @@ ul {
     color: var(--primary-color);
     text-transform: uppercase;
 }
-
+.material-symbols-outlined{
+    position: relative;
+    bottom: 13px;
+    left: 40px;
+}
+.nav-list li{
+    font-size: 1rem;
+    font-weight: bold;
+    ;
+}
 /* --- Navegación principal --- */
 .main-nav .nav-list {
     display: flex;
-    gap: 25px; /* Espacio entre los elementos del menú */
+    gap: 25px;
+    /* Espacio entre los elementos del menú */
     align-items: center;
 }
 
@@ -81,7 +94,8 @@ ul {
 }
 
 .main-nav .nav-toggle {
-    display: none; /* Oculto por defecto en desktop */
+    display: none;
+    /* Oculto por defecto en desktop */
     background: none;
     border: none;
     font-size: 1.8rem;
@@ -97,21 +111,99 @@ ul {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--primary-color) !important; /* Para asegurar que el color sea primario */
+    color: var(--primary-color) !important;
+    /* Para asegurar que el color sea primario */
 }
 
 .user-menu a i {
     font-size: 1.5rem;
 }
 
+/*---estilo del cuadro central--*/
+
+
+.buscador-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 50px auto;
+  height: 170px;
+  padding: 20px;
+  max-width: 1000px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.buscador-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #003580;
+}
+
+.buscador-cuadro h3 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 150px;
+}
+
+.habitaciones {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+}
+
+.habitaciones label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  background-color: #fdb813;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e5a300;
+}
+/*--final del estilo de boton--*/
+
 /* --- Hero Section --- */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500/007bff/ffffff?text=Tu+Destino+Te+Espera') no-repeat center center/cover;
-    color: var(--primary-color);
     text-align: center;
     padding: 100px 0;
+    height: 100vh;
     margin-bottom: 40px;
+    background-image: url("/mountainsFinal.webp");
+    background-size: cover;
+
 }
+
 
 .hero-section h1 {
     font-size: 3.5rem;
@@ -128,6 +220,7 @@ ul {
 .info-section {
     padding: 40px 0;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .info-section h2 {
@@ -209,9 +302,11 @@ ul {
     .main-nav .nav-list {
         gap: 15px;
     }
+
     .hero-section h1 {
         font-size: 2.8rem;
     }
+
     .hero-section p {
         font-size: 1.1rem;
     }
@@ -219,44 +314,54 @@ ul {
 
 @media (max-width: 768px) {
     .main-header .container {
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan */
         justify-content: center;
     }
 
     .logo {
-        width: 100%; /* El logo ocupa todo el ancho */
+        width: 100%;
+        /* El logo ocupa todo el ancho */
         text-align: center;
         margin-bottom: 15px;
     }
 
     .main-nav {
         width: 100%;
-        position: relative; /* Para posicionar el botón de toggle */
+        position: relative;
+        /* Para posicionar el botón de toggle */
         display: flex;
-        justify-content: flex-end; /* Alinea el botón de toggle a la derecha */
-        margin-top: -50px; /* Ajuste para el logo que ahora es 100% */
-        padding-right: 15px; /* Espacio para el botón de toggle */
+        justify-content: flex-end;
+        /* Alinea el botón de toggle a la derecha */
+        margin-top: -50px;
+        /* Ajuste para el logo que ahora es 100% */
+        padding-right: 15px;
+        /* Espacio para el botón de toggle */
     }
 
     .main-nav .nav-toggle {
-        display: block; /* Muestra el botón de menú hamburguesa */
+        display: block;
+        /* Muestra el botón de menú hamburguesa */
     }
 
     .main-nav .nav-list {
-        display: none; /* Oculta el menú por defecto en móvil */
+        display: none;
+        /* Oculta el menú por defecto en móvil */
         flex-direction: column;
         width: 100%;
         background-color: var(--white);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         position: absolute;
-        top: 60px; /* Debajo del header/logo */
+        top: 60px;
+        /* Debajo del header/logo */
         left: 0;
         z-index: 1000;
         padding: 10px 0;
     }
 
     .main-nav .nav-list.active {
-        display: flex; /* Muestra el menú cuando está activo */
+        display: flex;
+        /* Muestra el menú cuando está activo */
     }
 
     .main-nav .nav-list li {
@@ -277,7 +382,8 @@ ul {
 
     .user-menu {
         margin-left: 0;
-        margin-top: 10px; /* Espacio para el elemento de usuario */
+        margin-top: 10px;
+        /* Espacio para el elemento de usuario */
     }
 
     .hero-section {
@@ -301,16 +407,170 @@ ul {
     .logo {
         font-size: 1.5rem;
     }
+
     .hero-section h1 {
         font-size: 1.8rem;
     }
+
     .hero-section p {
         font-size: 0.9rem;
     }
+
     .feature-item h3 {
         font-size: 1.4rem;
     }
+
     .main-footer .social-links a {
         font-size: 1.2rem;
     }
+}
+
+
+
+
+
+/* card Servicios */
+.services {
+    padding: 5rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.service-icon.blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.service-icon.green { background: linear-gradient(135deg, #10b981, #059669); }
+.service-icon.purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.service-icon.orange { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.service-icon.teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
+.service-icon.pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #6b7280;
+}
+
+
+
+/* Footer */
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+}
+
+
+/* Utilidades */
+.gradient-text {
+    background: linear-gradient(135deg, #3b82f6, #14b8a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sections */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
 }
