@@ -1,7 +1,8 @@
 const productos = [
-  { id: 1, nombre: "Camisa", precio: 25.99 },
-  { id: 2, nombre: "Pantalón", precio: 45.50 },
-  { id: 3, nombre: "Zapatos", precio: 79.99 }
+  { id: 0cab487d-d665-4b28-863d-f4245b09a346,tipo_articulo:pasaje2, descripcion: jtrdiocf8oydl, fecha: null },
+  { id:256e659b-98c2-40b5-bdb8-694c9f1b23b6 ,tipo_articulo:pasaje, descripcion:ininiubpibpib, fecha: null },
+  { id: f1631feb-816d-4cdb-bd8a-1dca64e29576 ,tipo_articulo:nuse, descripcion:brfbrfb, fecha: null },
+  { id: fdaa9667-99c7-4889-b1e8-656901cdb48d ,tipo_articulo: lacaca es marron, descripcion:kgdo76xcpycxluyxlcx , fecha: null },
 ];
 
 const carrito = [];
