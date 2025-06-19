@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Viaje Ideal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=travel" />
+</head>
+
+<body>
+    <!-- header dylan -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <i class="fas fa-globe"></i>
+                    <span>Travel Pack</span>
+                </div>
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#"><i class="fa-solid fa-plane"></i> Vuelos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-hotel"></i> Hoteles</a></li>
+                    <li><a href="#"><i class="fa-solid fa-car"></i> Autos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-ticket"></i> Pasajes</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="user-account-link">
+                        <i class="fas fa-user-circle"></i> Mi Cuenta
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--buscador central del la pagina web-->
+    <main class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">
+                Descubre el <br><span class="gradient-text">Mundo</span><br>
+                Con Nosotros
+            </h1>
+            <div style="text-align: right; margin: 20px;">
+  <a href="carrito.html">
+    <button style="background-color: #fdb813; padding: 10px 20px; border-radius: 20px; border: none; font-weight: bold; color: white; cursor: pointer;">
+      Ir al carrito 🛒
+    </button>
+  </a>
+</div>
+            <p class="hero-subtitle">
+                Explora destinos únicos, reserva vuelos, hoteles y paquetes turísticos con facilidad.                               
+            <div class="buscador-container">
+                <div class="buscador-cuadro">
+                    <h2>Paquetes turísticos</h2>
+                    <div class="formulario">
+                        <input type="text" placeholder="Origen" id="origen">
+                        <input type="text" placeholder="Destino" id="destino">
+                        <input type="date" id="fecha-entrada">
+                        <input type="date" id="fecha-salida">
+                        <div class="habitaciones">
+                            <label><img src="https://img.icons8.com/ios-filled/20/000000/bed.png" /> 1</label>
+                            <label><img src="https://img.icons8.com/ios-filled/20/000000/user.png" /> 2</label>
+                        </div>
+                        <button onclick="buscar()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Sección de información -->
+    <section id="servicios" class="services">
+        <div class="container">
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Vuelos</h3>
+                    <p>Reserva vuelos nacionales e internacionales con las mejores aerolíneas del mundo.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon green">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Hoteles</h3>
+                    <p>Alojamientos desde hostels hasta resorts de lujo en destinos únicos.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon purple">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Alquiler de Autos</h3>
+                    <p>Alquila vehículos en cualquier destino para explorar con total libertad.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon orange">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguro de Viaje</h3>
+                    <p>Protege tu inversión con nuestros seguros de viaje completos.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon teal">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Atención 24/7</h3>
+                    <p>Soporte técnico y asistencia al viajero disponible las 24 horas.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon pink">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Pagos Flexibles</h3>
+                    <p>Múltiples opciones de pago y planes de financiación disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-globe"></i>
+                        <span>ViajesPro</span>
+                    </div>
+                    <p>Tu compañero de confianza para descubrir el mundo. Creamos experiencias únicas que duran toda la
+                        vida.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#paquetes">Paquetes Turísticos</a></li>
+                        <li><a href="#servicios">Vuelos</a></li>
+                        <li><a href="#servicios">Hoteles</a></li>
+                        <li><a href="#servicios">Alquiler de Autos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Atención al Cliente</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@viajespro.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Travel St, Ciudad</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ViajesPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="scrip.js"></script>
+</body>
+
+</html>

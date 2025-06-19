@@ -1,0 +1,612 @@
+/* Variables CSS para colores */
+:root {
+    --primary-color: #fff;
+    /* Azul vibrante, similar a Despegar */
+    --secondary-color: #fff;
+    /* Azul más oscuro para hover */
+    --text-color: #fff;
+    --light-bg: #fff;
+    --dark-bg: #fff;
+    --white: hwb(220 10% 37%);
+    --border-color: #fff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-brand i {
+    font-size: 1.5rem; 
+}
+
+
+/*
+.material-symbols-outlined {
+    position: relative;
+    bottom: 13px;
+    left: 40px;
+}
+*/
+
+.nav-list li {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* --- Navegación principal --- */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.main-nav .nav-list a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.main-nav .nav-list a:hover {
+    color: var(--secondary-color);
+}
+
+.main-nav .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 1001; 
+}
+
+.user-account-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color) !important;
+    font-weight: bold; 
+    margin-left: 20px; 
+}
+
+.user-account-link i {
+    font-size: 1.5rem;
+}
+
+
+/*---estilo del cuadro central--*/
+.buscador-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    padding-block: 35px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 16px hsl(0, 0%, 9%);
+}
+
+.buscador-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #003580;
+}
+
+.buscador-cuadro h2 {
+    text-align: left;
+    color: #616161;
+    margin-bottom: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"] {
+    color: #616161;
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    flex: 1 1 150px;
+}
+
+.habitaciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.habitaciones label {
+    color: #616161;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    background-color: #fdb813;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;   
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e5a300;
+}
+
+/*--final del estilo de boton--*/
+
+
+
+
+
+/* --- Hero Section --- */
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+    height: 70vh;
+    margin-bottom: 40px;
+    background-image: url("/WhatsApp\ Image\ 2025-06-18\ at\ 02.26.28.jpeg");
+    /* imagen de fondo */
+    background-size: cover;
+
+}
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* --- Info Section (Features Grid) --- */
+.info-section {
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+    margin-bottom: 40px;
+    background-image: url("/fondo.png");
+    /* imagen de fondo */
+    background-size: cover;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+/* card Servicios */
+.services {
+    padding: 5rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #313131;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.service-icon.blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.service-icon.green {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.service-icon.purple {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.service-icon.orange {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.service-icon.teal {
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+}
+
+.service-icon.pink {
+    background: linear-gradient(135deg, #ec4899, #db2777);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #6b7280;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+}
+
+
+
+
+
+
+
+/* Utilidades */
+.gradient-text {
+    background: linear-gradient(135deg, #3b82f6, #14b8a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+
+
+
+
+/* --- Media Queries para Responsividad --- */
+
+@media (max-width: 992px) {
+    .main-nav .nav-list {
+        gap: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column; /* Stack logo and nav vertically */
+        align-items: flex-start; /* Align items to the start for better mobile layout */
+    }
+
+    /* Adjust the main-nav positioning for mobile */
+    .main-nav {
+        width: 100%;
+        position: relative;
+        /* Align the nav-toggle button to the right */
+        display: flex;
+        justify-content: space-between; /* Space out logo and toggle */
+        align-items: center;
+        /* Removed margin-top and padding-right adjustments as the structure changed */
+        margin-top: 15px; /* Add some space below the brand/logo on mobile */
+        padding-right: 0;
+    }
+
+    /* Ensure the nav brand is always visible and at the top left */
+    .nav-brand {
+        width: auto; /* Allow content to dictate width */
+        margin-bottom: 0;
+        text-align: left; /* Align brand text to the left */
+        order: -1; /* Puts the brand before the toggle button within main-nav flex container */
+    }
+
+    .main-nav .nav-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+        margin-left: auto; /* Push toggle to the right */
+        order: 1; /* Puts the toggle after the nav-list in flex order */
+    }
+
+    .main-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        /* This is crucial for the "not cut off" part */
+        top: 100%; /* Position right below the main-nav (logo + toggle) */
+        left: 0;
+        z-index: 999; /* Below the toggle, but above other content */
+        padding: 10px 0;
+        border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    }
+
+    .main-nav .nav-list.active {
+        display: flex;
+        /* When active, ensure it's positioned correctly below the header */
+        /* To prevent content shift, consider adding min-height or max-height with overflow */
+        max-height: calc(100vh - 80px); /* Adjust 80px based on header height */
+        overflow-y: auto; /* Allow scrolling if menu is too long */
+    }
+
+    .main-nav .nav-list li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .main-nav .nav-list li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav .nav-list a {
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* Ensure the "Mi Cuenta" link is correctly handled in mobile */
+    .user-account-link {
+        display: none; /* Hide on mobile by default to be included in the toggled menu if desired */
+        /* If you want it inside the toggled menu, you'd move it into the <ul> in HTML
+           and adjust its display property within .nav-list.active */
+    }
+
+    /* If 'Mi Cuenta' should be part of the mobile menu */
+    .main-nav .nav-list.active .user-account-link-mobile {
+        display: flex; /* Show it when the menu is active */
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        justify-content: center; /* Center its content */
+        border-bottom: 1px solid var(--border-color); /* Add border if needed */
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+        line-height: 1.2; /* Adjusted for better mobile display */
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .info-section h2 {
+        font-size: 2rem;
+    }
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+        line-height: 1.2; /* Adjusted for better mobile display */
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .main-footer .social-links a {
+        font-size: 1.2rem;
+    }
+}
+}
