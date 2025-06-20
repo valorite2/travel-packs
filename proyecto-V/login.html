@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-form-container">
+            <h2>Iniciar Sesión</h2>
+            <form class="form" id="login-form">
+                <div class="input-group">
+                    <label for="login-username">Usuario</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p>¿No tienes una cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+                <p><a href="#" id="olvide-contraseña">olvide mi contraseña</a></p>
+            </form>
+        </div>
+
+        <div class="form-container hidden" id="register-form-container">
+            <h2>Registrarse</h2>
+            <form class="form" id="register-form">
+                <div class="input-group">
+                    <label for="register-username">Usuario</label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Contraseña</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-confirm-password">Confirmar Contraseña</label>
+                    <input type="password" id="register-confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Registrar</button>
+                <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Iniciar Sesión</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="scrip-log.js">
+
+    </script>
+</html>
