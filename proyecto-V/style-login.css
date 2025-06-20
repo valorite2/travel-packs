@@ -1,18 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("/WhatsApp\ Image\ 2025-06-18\ at\ 02.26.28.jpeg");
+    
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     box-sizing: border-box;
+    background-image: url("fondoD.png");
+    background-size: cover; /* This makes the image cover the entire element */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed;
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
@@ -63,7 +68,7 @@ h2 {
     width: calc(100% - 20px);
     padding: 12px 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
@@ -81,7 +86,7 @@ h2 {
     color: white;
     padding: 12px 25px;
     border: none;
-    border-radius: 20   px;
+    border-radius: 20px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
