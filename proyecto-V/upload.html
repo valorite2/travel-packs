@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Artículo</title>
+    <link rel="stylesheet" href="style.css"> 
+    </head>
+<body>
+    <div>
+        <h2>Subir Nuevo Artículo</h2>
+        <p id="upload-message" style="color: green; display: none;"></p>
+        <form id="upload-form">
+            <div>
+                <label for="tipo-articulo">Tipo de Artículo:</label>
+                <select id="tipo-articulo" required>
+                    <option value="">Selecciona un tipo</option>
+                    <option value="pasaje">Pasaje</option>
+                    <option value="paquete">Paquete</option>
+                    <option value="excursion">Excursión</option>
+                    <option value="alojamiento">Alojamiento</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="descripcion-articulo">Descripción:</label>
+                <textarea id="descripcion-articulo" rows="5" required></textarea>
+            </div>
+            <div>
+                <label for="fecha-articulo">Fecha:</label>
+                <input type="date" id="fecha-articulo" required>
+            </div>
+            <div>
+                <label for="imagen-articulo">Imagen del Artículo:</label>
+                <input type="file" id="imagen-articulo" accept="image/*" required>
+            </div>
+            <button type="submit">Subir Artículo</button>
+        </form>
+        <a href="index.html">Volver al Inicio de Sesión</a>
+    </div>
+
+    <script type="module" src="upload_script.js"></script> 
+
+</body>
+</html>
