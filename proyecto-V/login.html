@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
+        <p id="app-message"
+            style="color: green; font-weight: bold; margin-bottom: 15px; text-align: center; display: none;"></p>
+
         <div class="form-container" id="login-form-container">
             <h2>Iniciar Sesión</h2>
             <form class="form" id="login-form">
                 <div class="input-group">
-                    <label for="login-username">Usuario</label>
-                    <input type="text" id="login-username" name="username" required>
+                    <label for="login-email">Email</label> <input type="email" id="login-email" name="email" required>
                 </div>
                 <div class="input-group">
                     <label for="login-password">Contraseña</label>
@@ -49,7 +53,8 @@
             </form>
         </div>
     </div>
-    <script src="scrip-log.js">
 
-    </script>
+    <script type="module" src="scrip-log.js"></script>
+</body>
+
 </html>
